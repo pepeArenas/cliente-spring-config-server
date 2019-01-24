@@ -1,0 +1,11 @@
+If we have just a application.properties and we want to switch from profile to profile, it has a problem because when swith for example to qa profile, it already load from the default,
+hte order is the following:
+1 go to localhost:8888
+2 load default properties
+3 change to qa profile
+
+in order to solve that we have to add a bootstrap.properties or .yml and pass the url and the profile, the bootstrapt is load first than the application.property so we have
+1 go to localhost:8888
+2 change profile
+1 go to s1rates and load info
+
