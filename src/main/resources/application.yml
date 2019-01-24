@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: s1rates
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:8888
